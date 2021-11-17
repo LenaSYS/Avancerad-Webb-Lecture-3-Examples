@@ -33,7 +33,7 @@ app.delete("/delete/:deleteparam", function(req, res){
   res.type("application/json")
 
   // setting status
-  res.status(200)
+  res.status(204)
 
   // send answer
   res.send({msg: "here is where the resource '"+req.params.deleteparam+"' should have been deleted."});
