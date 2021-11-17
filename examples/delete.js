@@ -18,7 +18,7 @@ app.delete("/delete", function(req, res){
   res.type("application/json")
 
   // setting status
-  res.status(200)
+  res.status(204)
 
   // send answer
   res.send({msg: "delete can be used here, but with a route parameter"});

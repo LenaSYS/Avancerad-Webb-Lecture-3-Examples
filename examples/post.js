@@ -13,7 +13,7 @@ const app = express();
 // the route posthere can take a json body, and just returns the value to the user (and logs it) 
 app.post("/posthere", express.json(), function(req,res){
   console.log(req.body)
-  res.status(200).json(req.body)
+  res.status(201).json(req.body)
 })
 
 // post to example posthere/Johan/ needs to have userid as a parameter in a json body
